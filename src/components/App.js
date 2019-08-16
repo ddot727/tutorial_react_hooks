@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ResourceList from './ResourceList';
 
 const App = () => {
-  const [resourceName, setResourceName] = useState('post');
+  const [resourceName, setResourceName] = useState('posts');
 
   // resourceName === currentState resourceName
   // setResourceName === function that changes resourceName
