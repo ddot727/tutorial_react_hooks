@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import ResourceList from './ResourceList';
 
@@ -19,6 +19,13 @@ import ResourceList from './ResourceList';
 // }
 
 const App = () => {
+  const [resourceName, setResourceName] = useState('post');
+
+  // resourceName === currentState resourceName
+  // setResourceName === function that changes resourceName
+  // useState === function (param === initialState)
+
+
   return (
     <React.Fragment>
       <button onClick={() => this.setState({ resourceName: 'posts' })}>Posts</button>
